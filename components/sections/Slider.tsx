@@ -10,9 +10,15 @@ export const Slider = ({ imgs, title }: cardProps) => {
     return (
         <CarouselItem className={cn("pl-2", "md:basis-1/3", "lg:basis-1/4")}>
             <div className="p-1">
-                <Card className="bg-black-10">
+                <Card
+                    className={cn(
+                        "bg-black-10 border-black-15 transition-colors",
+                        "hover:border-red-45",
+                        "focus:border-red-45"
+                    )}
+                >
                     <CardContent>
-                        <div>
+                        <div className="grid grid-cols-2 gap-1.5">
                             {imgs.map((img, index) => (
                                 <div
                                     key={index}
@@ -22,9 +28,9 @@ export const Slider = ({ imgs, title }: cardProps) => {
                             ))}
                         </div>
                     </CardContent>
-                    <CardFooter>
+                    <CardFooter className="relative flex justify-between items-center z-10">
                         <h3>{title}</h3>
-                        <Button>
+                        <Button size={"icon-lg"} variant={"ghost"}>
                             <Link href={"#"}>
                                 <ArrowRight />
                             </Link>

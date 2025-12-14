@@ -196,58 +196,58 @@ export const devicesItems = [
         id: 1,
         icon: "/images/icon-1.svg",
         title: "Smartphones",
-        text: "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        text: "StreamVibeは、Android・iOSのスマートフォンに最適化されています。Google Play ストアまたは Apple App Store からアプリをダウンロードしてください。",
     },
     {
         id: 2,
         icon: "/images/icon-2.svg",
         title: "Tablet",
-        text: "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        text: "StreamVibeは、Android・iOSのスマートフォンに最適化されています。Google Play ストアまたは Apple App Store からアプリをダウンロードしてください。",
     },
     {
         id: 3,
         icon: "/images/icon-3.svg",
         title: "Smart TV",
-        text: "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        text: "StreamVibeは、Android・iOSのスマートフォンに最適化されています。Google Play ストアまたは Apple App Store からアプリをダウンロードしてください。",
     },
     {
         id: 4,
         icon: "/images/icon-4.svg",
         title: "Laptops",
-        text: "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        text: "StreamVibeは、Android・iOSのスマートフォンに最適化されています。Google Play ストアまたは Apple App Store からアプリをダウンロードしてください。",
     },
     {
         id: 5,
         icon: "/images/icon-5.svg",
         title: "Gaming Consoles",
-        text: "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        text: "StreamVibeは、Android・iOSのスマートフォンに最適化されています。Google Play ストアまたは Apple App Store からアプリをダウンロードしてください。",
     },
     {
         id: 6,
         icon: "/images/icon-6.svg",
         title: "VR Headsets",
-        text: "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        text: "StreamVibeは、Android・iOSのスマートフォンに最適化されています。Google Play ストアまたは Apple App Store からアプリをダウンロードしてください。",
     },
 ];
 
 export const pricingCardItem = [
     {
         id: 1,
-        title: "Basic Plan",
-        text: "Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.",
-        price: 9.99,
+        title: "ベーシックプラン",
+        text: "最新作を含む、幅広い映画やドラマの充実したライブラリをお楽しみいただけます。",
+        price: 1.55,
     },
     {
         id: 2,
-        title: "Standard Plan",
-        text: "Access to a wider selection of movies and shows, including most new releases and exclusive content",
-        price: 12.99,
+        title: "スタンダードプラン",
+        text: "最新作の大半や独占コンテンツを含む、より幅広い映画・ドラマにアクセスできます。",
+        price: 2.02,
     },
     {
         id: 3,
-        title: "Premium Plan",
-        text: "Access to a widest selection of movies and shows, including all new releases and Offline Viewing",
-        price: 14.99,
+        title: "プレミアムプラン",
+        text: "すべての最新作に加え、オフライン視聴にも対応した、最も幅広い映画・ドラマにアクセスできます",
+        price: 2.23,
     },
 ];
 

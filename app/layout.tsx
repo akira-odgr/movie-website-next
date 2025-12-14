@@ -5,6 +5,7 @@ import "./globals.css";
 import LenisProvider from "@/components/layout/LenisProvider";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Cta from "./pageComponents/Cta";
 
 const manrope = Manrope({
     variable: "--font-manrope",
@@ -28,6 +29,7 @@ export default function RootLayout({
                 <LenisProvider>
                     <Header />
                     <main className="min-h-svh">{children}</main>
+                    <Cta />
                     <Footer />
                 </LenisProvider>
             </body>
