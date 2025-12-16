@@ -1,3 +1,5 @@
+"use client";
+
 import { footerList } from "@/data/data";
 import { cn } from "@/lib/utils";
 import {
@@ -6,11 +8,19 @@ import {
     RiTwitterXFill,
 } from "@remixicon/react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import * as variants from "@/motion/animation";
 
 export const Footer = () => {
     return (
         <footer className="pt-14 bg-black-06 mt-14">
-            <div className={cn("container", "divide-y divide-black-12")}>
+            <motion.div
+                variants={variants.staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className={cn("container", "divide-y divide-black-12")}
+            >
                 {/* Footer top */}
                 <div
                     className={cn(
@@ -21,7 +31,11 @@ export const Footer = () => {
                     )}
                 >
                     {footerList.map((item) => (
-                        <div key={item.id} className="space-y-4">
+                        <motion.div
+                            variants={variants.fadeInUp}
+                            key={item.id}
+                            className="space-y-4"
+                        >
                             <p className="text-white font-semibold">
                                 {item.title}
                             </p>
@@ -34,11 +48,11 @@ export const Footer = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </motion.div>
                     ))}
 
                     {/* Social Links */}
-                    <div className="">
+                    <motion.div variants={variants.fadeInUp}>
                         <p className="font-semibold text-white">Contact Us</p>
                         <div className="flex items-center gap-2.5 mt-4">
                             {[
@@ -58,29 +72,39 @@ export const Footer = () => {
                                 </a>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 {/* Footer bottom */}
                 <div className="flex items-center justify-between flex-wrap mt-5 pb-5 space-y-3">
-                    <p>
+                    <motion.p variants={variants.fadeIn}>
                         &copy; {new Date().getFullYear()} streamvib, All Rights
                         Reserved
-                    </p>
+                    </motion.p>
 
                     {/* Links */}
-                    <div>
+                    <motion.div
+                        variants={variants.fadeIn}
+                        className="divide-x divide-black-20 space-x-2"
+                    >
                         {[
                             "Terms of Use",
                             "Privacy Policy",
                             "Cookie Policy",
                         ].map((label, index) => (
-                            <Link key={index} href={"#"}>
+                            <Link
+                                key={index}
+                                href={"#"}
+                                className={cn(
+                                    "inline-block pr-2 text-gray-65",
+                                    "hover:underline"
+                                )}
+                            >
                                 {label}
                             </Link>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
         </footer>
     );
 };

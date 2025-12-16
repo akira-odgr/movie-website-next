@@ -1,13 +1,23 @@
+"use client";
+
 import Title from "@/components/common/Title";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { devicesItems } from "@/data/data";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import * as variants from "@/motion/animation";
 
 export const Devices = () => {
     return (
         <section className="section">
-            <div className="container">
+            <motion.div
+                variants={variants.staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="container"
+            >
                 {/* Title */}
                 <Title
                     title="好きなエンタメを、いつでも・どこでも"
@@ -28,7 +38,7 @@ export const Devices = () => {
                     )}
                 >
                     {devicesItems.map((item) => (
-                        <div key={item.id}>
+                        <motion.div variants={variants.fadeInUp} key={item.id}>
                             <Card className="relative rounded-lg overflow-hidden bg-black-06">
                                 <CardHeader className="flex items-center gap-2.5">
                                     {/* icon */}
@@ -53,10 +63,10 @@ export const Devices = () => {
                                 {/* Gradient Clr */}
                                 <div className="absolute -top-9 -right-9 size-24 bg-red-55 rounded-full blur-[100px]" />
                             </Card>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 };

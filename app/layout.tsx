@@ -6,6 +6,7 @@ import LenisProvider from "@/components/layout/LenisProvider";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Cta from "./pageComponents/Cta";
+import NextTopLoader from "nextjs-toploader";
 
 const manrope = Manrope({
     variable: "--font-manrope",
@@ -26,6 +27,7 @@ export default function RootLayout({
     return (
         <html lang="ja" className="dark">
             <body className={`${manrope.className} antialiased`}>
+                <NextTopLoader color="#fff" />
                 <LenisProvider>
                     <Header />
                     <main className="min-h-svh">{children}</main>

@@ -1,13 +1,23 @@
+"use client";
+
 import Title from "@/components/common/Title";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { pricingCardItem } from "@/data/data";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import * as variants from "@/motion/animation";
 
 export const Pricing = () => {
     return (
         <section className={cn("pt-24", "md:pt-36")}>
-            <div className="container">
+            <motion.div
+                variants={variants.staggerContainer}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.5 }}
+                className="container"
+            >
                 {/* Title */}
                 <Title
                     title="あなたに合ったプランを選択"
@@ -15,7 +25,8 @@ export const Pricing = () => {
                 />
 
                 {/* Wrapper */}
-                <div
+                <motion.div
+                    variants={variants.fadeIn}
                     className={cn(
                         "grid gap-5 mt-10",
                         "sm:grid-cols-2",
@@ -53,8 +64,8 @@ export const Pricing = () => {
                             </CardFooter>
                         </Card>
                     ))}
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     );
 };

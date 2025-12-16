@@ -1,8 +1,8 @@
-import { Card, CardContent } from "@/components/ui/card";
+"use client";
+
 import {
     Carousel,
     CarouselContent,
-    CarouselItem,
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
@@ -10,11 +10,19 @@ import Title from "@/components/common/Title";
 import { categoryItems } from "@/data/data";
 import Slider from "@/components/sections/Slider";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import * as variants from "@/motion/animation";
 
 export const Categories = () => {
     return (
         <section className="section">
-            <div className={cn("container", "space-y-10", "lg:space-y-16")}>
+            <motion.div
+                variants={variants.staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className={cn("container", "space-y-10", "lg:space-y-16")}
+            >
                 {/* Title */}
                 <Title
                     title="充実のカテゴリーラインナップを探索"
@@ -22,7 +30,7 @@ export const Categories = () => {
                 />
 
                 {/* Wrapper */}
-                <div>
+                <motion.div variants={variants.fadeIn}>
                     <Carousel
                         className={cn("w-full", "max-lg:overflow-x-hidden")}
                     >
@@ -34,8 +42,8 @@ export const Categories = () => {
                         <CarouselPrevious />
                         <CarouselNext />
                     </Carousel>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     );
 };
