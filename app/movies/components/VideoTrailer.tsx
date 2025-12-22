@@ -22,6 +22,8 @@ import {
 } from "@remixicon/react";
 import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import { motion } from "framer-motion";
+import * as variants from "@/motion/animation";
 
 export const VideoTrailer = () => {
     const [api, setApi] = useState<CarouselApi>();
@@ -44,8 +46,14 @@ export const VideoTrailer = () => {
     };
 
     return (
-        <section className={cn("section", "px-4", "md:px-6")}>
-            <div>
+        <motion.section
+            variants={variants.staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={cn("section", "px-4", "md:px-6")}
+        >
+            <motion.div variants={variants.fadeIn}>
                 <Carousel
                     opts={{ loop: true }}
                     setApi={setApi}
@@ -149,8 +157,8 @@ export const VideoTrailer = () => {
                         <RiArrowRightLongLine />
                     </CarouselNext>
                 </Carousel>
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     );
 };
 

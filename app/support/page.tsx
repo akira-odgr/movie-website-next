@@ -1,5 +1,11 @@
+import ContactForm from "./components/ContactForm";
+
 const Support = () => {
-    return <div>Support</div>;
+    return (
+        <>
+            <ContactForm />
+        </>
+    );
 };
 
 export default Support;
