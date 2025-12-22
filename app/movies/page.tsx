@@ -5,9 +5,15 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import { categoryItems, categoryItemsTwo } from "@/data/data";
+import {
+    categoryItems,
+    categoryItemsFour,
+    categoryItemsThree,
+    categoryItemsTwo,
+} from "@/data/data";
 import Slider from "@/components/sections/Slider";
 import { cn } from "@/lib/utils";
+import SliderTwo from "@/components/sections/SliderTwo";
 
 const Movies = () => {
     return (
@@ -37,16 +43,60 @@ const Movies = () => {
 
             {/* Top 10 Movies */}
             <section className="section">
-                <div className="container">
+                <div className={cn("container", "space-y-5", "md:space-y-10")}>
                     <h2 className="title">Popular Top 10 In Genres</h2>
 
                     {/* Wrapper */}
-                    <Carousel>
-                        <CarouselContent>
+                    <Carousel
+                        className={cn("w-full", "max-lg:overflow-x-hidden")}
+                    >
+                        <CarouselContent className="-ml-1">
                             {categoryItemsTwo.map((item) => (
                                 <Slider key={item.id} {...item} />
                             ))}
                         </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
+                </div>
+            </section>
+
+            {/* Trending Now */}
+            <section className="section">
+                <div className={cn("container", "space-y-5", "md:space-y-10")}>
+                    <h2 className="title">Popular Top 10 In Genres</h2>
+
+                    {/* Wrapper */}
+                    <Carousel
+                        className={cn("w-full", "max-lg:overflow-x-hidden")}
+                    >
+                        <CarouselContent className="-ml-1">
+                            {categoryItemsThree.map((item) => (
+                                <SliderTwo key={item.id} {...item} />
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
+                </div>
+            </section>
+
+            {/* Must - Watch Movies */}
+            <section className="section">
+                <div className={cn("container", "space-y-5", "md:space-y-10")}>
+                    <h2 className="title">Popular Top 10 In Genres</h2>
+
+                    {/* Wrapper */}
+                    <Carousel
+                        className={cn("w-full", "max-lg:overflow-x-hidden")}
+                    >
+                        <CarouselContent className="-ml-1">
+                            {categoryItemsFour.map((item) => (
+                                <SliderTwo key={item.id} {...item} />
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
                     </Carousel>
                 </div>
             </section>

@@ -8,3 +8,10 @@ export interface cardProps {
     imgs: string[];
     title: string;
 }
+
+export interface cardPropsTwo {
+    id: number;
+    cardImg: string;
+    view: string;
+    duration: string;
+}
