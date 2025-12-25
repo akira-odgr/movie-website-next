@@ -6,10 +6,9 @@ import { RiPlayFill } from "@remixicon/react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import * as variants from "@/motion/animation";
-import { span } from "framer-motion/client";
 
 export const Hero = () => {
-    const title = "あなたの“好き”を、いつでもどこでも";
+    const title = "あなたの“好き”をいつでもどこでも";
     const words = title.split("");
     return (
         <section className="relative bg-[url(/images/hero-bg-img.png)] bg-cover bg-center bg-no-repeat h-svh">
@@ -34,6 +33,7 @@ export const Hero = () => {
                         width={200}
                         height={200}
                         className="w-full h-auto object-cover"
+                        loading="eager"
                     />
                 </motion.div>
 

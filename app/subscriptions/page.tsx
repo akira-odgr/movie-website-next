@@ -1,5 +1,13 @@
+import Pricing from "../pageComponents/Pricing";
+import Features from "./components/Features";
+
 const Subscriptions = () => {
-    return <div>Subscriptions</div>;
+    return (
+        <>
+            <Pricing />
+            <Features />
+        </>
+    );
 };
 
 export default Subscriptions;

@@ -35,6 +35,7 @@ export const Header = () => {
                         alt="logo"
                         width={166}
                         height={50}
+                        loading="eager"
                     />
                 </Link>
 
@@ -57,6 +58,7 @@ export const Header = () => {
                                             ? "bg-black-10"
                                             : "hover:bg-black-12"
                                     )}
+                                    onClick={handleClick}
                                 >
                                     {item.label}
                                 </Link>

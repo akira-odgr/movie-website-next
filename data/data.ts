@@ -254,43 +254,43 @@ export const pricingCardItem = [
 export const faqListItems = [
     {
         id: 1,
-        title: "What is StreamVibe?",
-        text: "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        title: "StreamVibeとは何ですか？",
+        text: "SStreamVibeは、映画やドラマをオンデマンドで視聴できるストリーミングサービスです。",
     },
     {
         id: 2,
-        title: "How much does StreamVibe cost?",
-        text: "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        title: "StreamVibeの料金はいくらですか？",
+        text: "StreamVibeは、映画やドラマをオンデマンドで視聴できるストリーミングサービスです。",
     },
     {
         id: 3,
-        title: "What content is available on StreamVibe?",
-        text: "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        title: "StreamVibeではどのようなコンテンツが視聴できますか？",
+        text: "StreamVibeは、映画やドラマをオンデマンドで視聴できるストリーミングサービスです。",
     },
     {
         id: 4,
-        title: "How can I watch StreamVibe?",
-        text: "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        title: "StreamVibeはどのように視聴できますか？",
+        text: "StreamVibeは、映画やドラマをオンデマンドで視聴できるストリーミングサービスです。",
     },
     {
         id: 5,
-        title: "How do I sign up for StreamVibe?",
-        text: "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        title: "StreamVibeへの登録方法は？",
+        text: "SStreamVibeは、映画やドラマをオンデマンドで視聴できるストリーミングサービスです。",
     },
     {
         id: 6,
-        title: "What is the StreamVibe free trial?",
-        text: "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        title: "StreamVibeの無料トライアルとは何ですか？",
+        text: "StreamVibeは、映画やドラマをオンデマンドで視聴できるストリーミングサービスです。",
     },
     {
         id: 7,
-        title: "How do I contact StreamVibe customer support?",
-        text: "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        title: "StreamVibeのカスタマーサポートにはどのように連絡できますか？",
+        text: "StreamVibeは、映画やドラマをオンデマンドで視聴できるストリーミングサービスです。",
     },
     {
         id: 8,
-        title: "What are the StreamVibe payment methods?",
-        text: "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        title: "StreamVibeの支払い方法にはどのようなものがありますか？",
+        text: "StreamVibeは、映画やドラマをオンデマンドで視聴できるストリーミングサービスです。",
     },
 ];
 

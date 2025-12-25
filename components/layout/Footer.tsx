@@ -12,6 +12,8 @@ import { motion } from "framer-motion";
 import * as variants from "@/motion/animation";
 
 export const Footer = () => {
+    const year = new Date().getFullYear();
+
     return (
         <footer className="pt-14 bg-black-06 mt-14">
             <motion.div
@@ -77,8 +79,7 @@ export const Footer = () => {
                 {/* Footer bottom */}
                 <div className="flex items-center justify-between flex-wrap mt-5 pb-5 space-y-3">
                     <motion.p variants={variants.fadeIn}>
-                        &copy; {new Date().getFullYear()} streamvib, All Rights
-                        Reserved
+                        &copy; {year} streamvib, All Rights Reserved
                     </motion.p>
 
                     {/* Links */}

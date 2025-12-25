@@ -15,3 +15,10 @@ export interface cardPropsTwo {
     view: string;
     duration: string;
 }
+
+export interface inputProps {
+    id: number;
+    type: string;
+    label: string;
+    placeholder: string;
+}

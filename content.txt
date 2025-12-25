@@ -9,14 +9,14 @@ Enter First Name
 Enter Last Name
 Enter your Email
 Enter Phone Number
-Type your message here.
+
 
 
 Choose the plan that's right for you
 Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!
 
-Compare our plans and find the right one for you
-StreamVibe offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you.
+
+
 
 
 
